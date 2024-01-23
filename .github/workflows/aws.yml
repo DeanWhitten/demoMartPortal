@@ -46,7 +46,8 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    arch: arm64
     environment: production
 
     steps:
