@@ -35,7 +35,7 @@ env:
   ECR_REPOSITORY: demo_mart_portal          # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: demoMartClusty                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: demoMartIMG # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: demoMartIMG:1 # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: portalImg          # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
@@ -46,7 +46,11 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        os: [ubuntu-20.04]
+        arch: [arm64]
     environment: production
 
     steps:
