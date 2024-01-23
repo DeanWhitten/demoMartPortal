@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demomartportal.DemoMartPortalApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-23T00:22:23" hostname="deans-mbp.lan" time="0.33">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.demomartportal.DemoMartPortalApplicationTests" time="0.33"/>
+  <system-out><![CDATA[19:22:22.542 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demomartportal.DemoMartPortalApplicationTests]: DemoMartPortalApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:22:22.571 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demomartportal.DemoMartPortalApplication for test class com.example.demomartportal.DemoMartPortalApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-22T19:22:22.694-05:00  INFO 3525 --- [    Test worker] c.e.d.DemoMartPortalApplicationTests     : Starting DemoMartPortalApplicationTests using Java 17.0.9 with PID 3525 (started by deanfwhitten in /Users/deanfwhitten/Desktop/demoMartPortal)
+2024-01-22T19:22:22.695-05:00  INFO 3525 --- [    Test worker] c.e.d.DemoMartPortalApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-01-22T19:22:23.194-05:00  INFO 3525 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-22T19:22:23.218-05:00  INFO 3525 --- [    Test worker] c.e.d.DemoMartPortalApplicationTests     : Started DemoMartPortalApplicationTests in 0.606 seconds (process running for 0.941)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
